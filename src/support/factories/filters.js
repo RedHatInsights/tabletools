@@ -46,7 +46,7 @@ export const rating = {
   label: 'Rating above',
   items: [...new Array(5)].map((_, idx) => ({
     label: [...new Array(idx + 1)].map(() => '★'),
-    value: idx + 1,
+    value: `${idx + 1}`,
   })),
   filterSerialiser: (_config, value) => `.rating >= ${value}`,
 };

@@ -39,6 +39,14 @@ const useTableSort = (columns, options = {}) => {
     serialisers: { sort: serialiser } = {},
     onSort: onSortOption,
   } = options;
+  const defaultState = useMemo(
+    () =>
+      initialSortBy || {
+        index: 0,
+        direction: 'asc',
+      },
+    [initialSortBy],
+  );
 
   const stateOptions = useDeepCompareMemo(
     () => ({
@@ -52,10 +60,7 @@ const useTableSort = (columns, options = {}) => {
   );
   const [sortBy, setSortBy] = useTableState(
     TABLE_STATE_NAMESPACE,
-    initialSortBy || {
-      index: 0,
-      direction: 'asc',
-    },
+    defaultState,
     stateOptions,
   );
 
