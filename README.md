@@ -25,7 +25,7 @@ It provides implementations and state management for several features and provid
 # Install
 
 ```sh
-$ npm install --save bastilian-tabletools
+$ npm install --save @redhat-cloud-services/tabletools
 ```
 
 # Basic usage
@@ -40,7 +40,7 @@ The function should return an array with two items, the first being the array of
 the second being the total amount of items available to show in the table.
 
 ```js
-import { TableToolsTable } from 'bastilian-tabletools';
+import { TableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicExample = () => {
   const fetchItems = async () => {
@@ -73,7 +73,7 @@ with the `total` being the overall amount of items/results available.
 
 
 ```js
-import { TableToolsTable } from 'bastilian-tabletools';
+import { TableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicQueryExample = () => {
   const {
@@ -112,7 +112,7 @@ It can be passed an array of all available items/results and provides sorting an
 
 
 ```js
-import { StaticTableToolsTable } from 'bastilian-tabletools';
+import { StaticTableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicStaticExample = () => {
   const arrayOfItems = itemsFactory(4096);

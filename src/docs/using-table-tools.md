@@ -9,7 +9,7 @@ category: Guides
 A basic example component using the `TableToolsTable` this way would look like this:
 
 ```js
-import { TableToolsTable } from 'bastilian-tabletools';
+import { TableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicExample = () => {
   const fetchItems = async () => {
@@ -45,7 +45,7 @@ Another way is by passing an array as the `items`, as well as the `total` and `l
 if you are using a `useQuery`(-like) hook like in the following example:
 
 ```js
-import { TableToolsTable } from 'bastilian-tabletools';
+import { TableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicQueryExample = () => {
   const {
@@ -87,7 +87,7 @@ when the function is called and the pagination state can be accessed and convert
 Like we do here:
 
 ```js
-import { TableToolsTable } from 'bastilian-tabletools';
+import { TableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicStateExample = () => {
   const fetchItems = async (
@@ -126,7 +126,7 @@ which is a function that converts a table state into any wanted format when the 
 We can for example provide the `convertToOffsetAndLimit` function as a serialiser for the pagination state:
 
 ```js
-import { TableToolsTable } from 'bastilian-tabletools';
+import { TableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicSerialisedStateExample = () => {
   const fetchItems = async ({ pagination } = {}) => {
@@ -169,7 +169,7 @@ For this we need to wrap the component that will call the query hook in the `Tab
 which will allow the `useSerialisedTableState` to access the context properly.
 
 ```js
-import { TableToolsTable, TableStateProvider, useSerialisedTableState } from 'bastilian-tabletools';
+import { TableToolsTable, TableStateProvider, useSerialisedTableState } from '@redhat-cloud-services/tabletools';
 
 
 const BasicQueryWithSerialisedStateExample = () => {

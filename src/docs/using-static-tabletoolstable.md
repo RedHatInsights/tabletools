@@ -13,7 +13,7 @@ any other situation where it is not possible to dynamically get paginated items.
 A simple example of using the `StaticTableToolsTable` would look like this:
 
 ```js
-import { StaticTableToolsTable } from 'bastilian-tabletools';
+import { StaticTableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicStaticExample = () => {
   const arrayOfItems = itemsFactory(4096);
@@ -46,7 +46,7 @@ The `StaticTableToolsTable` component also allows sorting and filtering via [jso
 To enable sorting for any column, a `sortable` prop needs to be provided to identify the property the column should be sorted by.
 
 ```js
-import { StaticTableToolsTable } from 'bastilian-tabletools';
+import { StaticTableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicStaticSortedExample = () => {
   const arrayOfItems = itemsFactory(4096);
@@ -75,7 +75,7 @@ Filters can be provided as with any other `TableToolsTable` based table and can 
 For more complex filtering a `filterSerialiser` function can be passed, which should return a [jsonquery](https://jsonquerylang.org/) filter snippet as shown in the following example:
 
 ```js
-import { StaticTableToolsTable } from 'bastilian-tabletools';
+import { StaticTableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicStaticSortedFilteredExample = () => {
   const arrayOfItems = itemsFactory(4096);
@@ -122,7 +122,7 @@ The `StaticTableToolsTable` component already provides necessary functions to ma
 and only requires being passed a `onSelect` function in the options to enable bulk selection.
 
 ```js
-import { StaticTableToolsTable } from 'bastilian-tabletools';
+import { StaticTableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicBulkSelectExample = () => {
   const arrayOfItems = itemsFactory(4096);
@@ -173,7 +173,7 @@ export default BasicBulkSelectExample;
 Enabling export in a StaticTableToolsTable is as simple as passing `enableExport` in the options:
 
 ```js
-import { StaticTableToolsTable } from 'bastilian-tabletools';
+import { StaticTableToolsTable } from '@redhat-cloud-services/tabletools';
 
 const BasicExportingExample = () => {
   const arrayOfItems = itemsFactory(4096);
