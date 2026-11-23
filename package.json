@@ -1,16 +1,19 @@
 {
-  "name": "bastilian-tabletools",
+  "name": "@redhat-cloud-services/tabletools",
   "version": "0.0.0",
   "description": "A collection of hooks and components to build tables based on the PatternFly (v4) `Table` component and the Red Hat Insights `PrimaryToolbar` component.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bastilian/tabletools.git"
+    "url": "git+https://github.com/RedHatInsights/tabletools.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/bastilian/tabletools/issues"
+    "url": "https://github.com/RedHatInsights/tabletools/issues"
   },
-  "homepage": "https://github.com/bastilian/tabletools#readme",
+  "homepage": "https://github.com/RedHatInsights/tabletools#readme",
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
