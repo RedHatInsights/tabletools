@@ -20,7 +20,8 @@
         },
         "plugins": [
           { "transform": "typescript-transform-paths" },
-        ]
+        ],
+        "rootDir": "./src",
     },
     "include": [
         "!src/**/*.test.*",
